@@ -1,2 +1,97 @@
-<title>Instagram-Home</title>
-<h2>Instagram</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 100%;
+            padding: 16px 40px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+        .logo {
+            font-family: 'Grand Hotel', cursive;
+            font-size: 2rem;
+            color: #262626;
+            letter-spacing: 1px;
+        }
+        .nav-actions {
+            display: flex;
+            gap: 16px;
+        }
+        .nav-actions a {
+            text-decoration: none;
+            color: #fff;
+            background: #0095f6;
+            padding: 8px 18px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .nav-actions a.register {
+            background: #262626;
+        }
+        .nav-actions a:hover {
+            opacity: 0.85;
+        }
+        .main-content {
+            max-width: 600px;
+            margin: 60px auto 0 auto;
+            background: #fff;
+            padding: 40px 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        .main-content h2 {
+            font-family: 'Grand Hotel', cursive;
+            font-size: 2.3rem;
+            color: #262626;
+            margin-bottom: 18px;
+        }
+        .main-content p {
+            color: #777;
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+        }
+        .img-demo {
+            width: 60%;
+            border-radius: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        @media (max-width: 700px) {
+            .main-content {
+                padding: 16px 4px;
+            }
+            .navbar {
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Instagram</div>
+        <div class="nav-actions">
+            <a href="/login.html" class="login">Login</a>
+            <a href="/register.html" class="register">Register</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2>Welcome to Instagram</h2>
+        <img src="https://source.unsplash.com/featured/400x200?instagram,social" alt="Instagram Demo" class="img-demo" />
+        <p>Connect with friends and the world around you. Share your moments, discover trending photos, and explore stories from people everywhere. Join Instagram today!</p>
+    </div>
+</body>
+</html>
